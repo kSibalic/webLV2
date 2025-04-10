@@ -1,0 +1,10 @@
+[
+    { "url": "/images/sample-1.svg", "id": "img1", "title": "Slika 1" },
+    { "url": "/images/sample-2.svg", "id": "img2", "title": "Slika 2" },
+    { "url": "/images/sample-3.svg", "id": "img3", "title": "Slika 3" },
+    { "url": "/images/sample-4.svg", "id": "img4", "title": "Slika 4" },
+    { "url": "/images/sample-5.svg", "id": "img5", "title": "Slika 5" },
+    { "url": "/images/sample-6.svg", "id": "img6", "title": "Slika 6" },
+    { "url": "/images/sample-7.svg", "id": "img7", "title": "Slika 7" },
+    { "url": "/images/sample-8.png", "id": "img8", "title": "Slika 8" }
+]

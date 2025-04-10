@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="hr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Karlo Sibalic">
+		<meta name="description" content="LV1 iz kolegija Web programiranje">
+		<meta name="keywords" content="HTML, CSS, FERIT">
+		<link rel="stylesheet" href="../style/style_slike.css">
+      <link rel="stylesheet" href="../style/style.css">
+		<title>LV1 - Web programiranje</title> 
+	</head>
+<body>
+
+  <nav aria-labelledby="primarna-navigacija">
+    <ul>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Menu</a>
+        <div class="dropdown-content" id="primarna-navigacija">
+          <a href="../index.html">Pocetna</a>
+          <a href="grafikon.html">Grafikon</a>
+          <a href="#">Galerija</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Omogućen lazy loading; dodane nove klase i properties za lakšu realizaciju galerije i njene responzivnosti -->
+  <section class="galerija">
+    <h1>Galerija slika</h1>
+    <div class="img-gallery-magnific">
+      <div class="magnific-img">
+        <a href="#slika1">
+          <img src="https://unsplash.it/300/200?random=1" alt="Slika 1" loading="lazy">
+        </a>
+        <div class="img-description">Slika 1</div>
+      </div>
+      <div class="magnific-img">
+        <a href="#slika2">
+          <img src="https://unsplash.it/300/200?random=2" alt="Slika 2" loading="lazy">
+        </a>
+        <div class="img-description">Slika 2</div>
+      </div>
+      <div class="magnific-img">
+        <a href="#slika3">
+          <img src="https://unsplash.it/300/200?random=3" alt="Slika 3" loading="lazy">
+        </a>
+        <div class="img-description">Slika 3</div>
+      </div>
+      <div class="magnific-img">
+        <a href="#slika4">
+          <img src="https://unsplash.it/300/200?random=4" alt="Slika 4" loading="lazy">
+        </a>
+        <div class="img-description">Slika 4</div>
+      </div>
+      <div class="magnific-img">
+        <a href="#slika5">
+          <img src="https://unsplash.it/300/200?random=5" alt="Slika 5" loading="lazy">
+        </a>
+        <div class="img-description">Slika 5</div>
+      </div>
+	  <div class="magnific-img">
+        <a href="#slika6">
+          <img src="https://unsplash.it/300/200?random=6" alt="Slika 6" loading="lazy">
+        </a>
+        <div class="img-description">Slika 6</div>
+      </div>
+	  <div class="magnific-img">
+        <a href="#slika7">
+          <img src="https://unsplash.it/300/200?random=7" alt="Slika 7" loading="lazy">
+        </a>
+        <div class="img-description">Slika 7</div>
+      </div>
+	  <div class="magnific-img">
+        <a href="#slika8">
+          <img src="https://unsplash.it/300/200?random=8" alt="Slika 8" loading="lazy">
+        </a>
+        <div class="img-description">Slika 8</div>
+      </div>
+	  <div class="magnific-img">
+        <a href="#slika9">
+          <img src="https://unsplash.it/300/200?random=9" alt="Slika 9" loading="lazy">
+        </a>
+        <div class="img-description">Slika 9</div>
+      </div>
+	  <div class="magnific-img">
+        <a href="#slika10">
+          <img src="https://unsplash.it/300/200?random=10" alt="Slika 10" loading="lazy">
+        </a>
+        <div class="img-description">Slika 10</div>
+      </div>
+	  <div class="magnific-img">
+        <a href="#slika11">
+          <img src="https://unsplash.it/300/200?random=11" alt="Slika 11" loading="lazy">
+        </a>
+        <div class="img-description">Slika 11</div>
+      </div>
+	  <div class="magnific-img">
+        <a href="#slika12">
+          <img src="https://unsplash.it/300/200?random=12" alt="Slika 12" loading="lazy">
+        </a>
+        <div class="img-description">Slika 12</div>
+      </div>
+	  <div class="magnific-img">
+        <a href="#slika13">
+          <img src="https://unsplash.it/300/200?random=13" alt="Slika 13" loading="lazy">
+        </a>
+        <div class="img-description">Slika 13</div>
+	  </div>
+		<div class="magnific-img">
+			<a href="#slika14">
+			  <img src="https://unsplash.it/300/200?random=14" alt="Slika 14" loading="lazy">
+			</a>
+			<div class="img-description">Slika 14</div>
+		</div>
+		<div class="magnific-img">
+			<a href="#slika15">
+			  <img src="https://unsplash.it/300/200?random=15" alt="Slika 15" loading="lazy">
+			</a>
+			<div class="img-description">Slika 15</div>
+		</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dodan Lightbox -->
+  <div id="slika1" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="https://unsplash.it/900/600?random=1" alt="Slika 1">
+  </div>
+
+  <div id="slika2" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="https://unsplash.it/900/600?random=2" alt="Slika 2">
+  </div>
+
+  <div id="slika3" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="https://unsplash.it/900/600?random=3" alt="Slika 3">
+  </div>
+
+  <div id="slika4" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="https://unsplash.it/900/600?random=4" alt="Slika 4">
+  </div>
+
+  <div id="slika5" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="https://unsplash.it/900/600?random=5" alt="Slika 5">
+  </div>
+
+  <div id="slika6" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="https://unsplash.it/900/600?random=6" alt="Slika 6">
+  </div>
+
+  <div id="slika7" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="https://unsplash.it/900/600?random=7" alt="Slika 7">
+  </div>
+
+  <div id="slika8" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="https://unsplash.it/900/600?random=8" alt="Slika 8">
+  </div>
+
+  <div id="slika9" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="https://unsplash.it/900/600?random=9" alt="Slika 9">
+  </div>
+
+  <div id="slika10" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="https://unsplash.it/900/600?random=10" alt="Slika 10">
+  </div>
+
+  <div id="slika11" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="https://unsplash.it/900/600?random=11" alt="Slika 11">
+  </div>
+
+  <div id="slika12" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="https://unsplash.it/900/600?random=12" alt="Slika 12">
+  </div>
+
+  <div id="slika13" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="https://unsplash.it/900/600?random=13" alt="Slika 13">
+  </div>
+
+  <div id="slika14" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="https://unsplash.it/900/600?random=14" alt="Slika 14">
+  </div>
+
+  <div id="slika15" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="https://unsplash.it/900/600?random=15" alt="Slika 15">
+  </div>
+
+</body>
+</html>

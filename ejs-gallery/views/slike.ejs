@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija slika</title>
+    <link rel="stylesheet" href="/style/style_slike.css">
+</head>
+<body>
+
+<section class="galerija"> 
+    <h1>Galerija slika</h1>
+
+    <div class="img-gallery">
+        <% images.forEach(image => { %>
+            <figure class="galerija_slika">
+                <a href="#<%= image.id %>" class="image-popup-vertical-fit">
+                    <img src="<%= image.url %>" alt="<%= image.title %>" loading="lazy">
+                </a>
+                <figcaption><%= image.title %></figcaption>
+            </figure>
+        <% }); %>
+    </div>
+</section>
+
+<% images.forEach(image => { %>
+    <div id="<%= image.id %>" class="lightbox">
+        <a href="#" class="close">&times;</a>
+        <img src="<%= image.url %>" alt="<%= image.title %>">
+    </div>
+<% }); %>
+
+</body>
+</html>
