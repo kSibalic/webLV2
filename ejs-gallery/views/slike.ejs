@@ -5,19 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerija slika</title>
     <link rel="stylesheet" href="/style/style_slike.css">
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
+
+<nav aria-labelledby="primarna-navigacija">
+    <ul>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Menu</a>
+            <div class="dropdown-content" id="primarna-navigacija">
+              <a href="../index.html">Pocetna</a>
+              <a href="/pages/grafikon.html">Grafikon</a>
+              <a href="#">Galerija</a>
+            </div>
+        </li>
+    </ul>
+</nav>
 
 <section class="galerija"> 
     <h1>Galerija slika</h1>
 
-    <div class="img-gallery">
+    <div class="img-gallery-magnific">
         <% images.forEach(image => { %>
-            <figure class="galerija_slika">
+            <figure class="magnific-img">
                 <a href="#<%= image.id %>" class="image-popup-vertical-fit">
                     <img src="<%= image.url %>" alt="<%= image.title %>" loading="lazy">
                 </a>
-                <figcaption><%= image.title %></figcaption>
+                <figcaption class="img-description"><%= image.title %></figcaption>
             </figure>
         <% }); %>
     </div>
