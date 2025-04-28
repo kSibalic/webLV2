@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Karlo Sibalic" />
+    <meta name="description" content="LV1 iz kolegija Web programiranje" />
+    <meta name="keywords" content="HTML, CSS, FERIT" />
+    <link rel="stylesheet" href="../style/style.css">
+    <title>LV3 - Web programiranje</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+  </head>
+  <body>
+    <header aria-labelledby="naslovna-traka">
+      <h1>Dobrodosli na moju web stranicu</h1>
+    </header>
+
+    <nav aria-labelledby="primarna-navigacija">
+      <ul>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Menu</a>
+          <div class="dropdown-content" id="primarna-navigacija">
+            <a href="../index.html">Pocetna</a>
+            <a href="grafikon.html">Grafikon</a>
+            <a href="slike.html">Galerija</a>
+            <a href="#">Videoteka</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <h1>LV3 - Online Videoteka</h1>
+    
+    <!-- Filteri -->
+    <div class="filters-container">
+      <h3>Filtriraj filmove</h3>
+      <div class="filter-row">
+        <div class="filter-group">
+          <label for="genre-filter">Žanr:</label>
+          <select id="genre-filter">
+            <option value="">Svi žanrovi</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="country-filter">Država:</label>
+          <select id="country-filter">
+            <option value="">Sve države</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="year-range">Godina (od-do):</label>
+          <div class="year-range-container">
+            <input type="number" id="year-min" placeholder="Od" min="1900" max="2025">
+            <span>-</span>
+            <input type="number" id="year-max" placeholder="Do" min="1900" max="2025">
+          </div>
+        </div>
+      </div>
+      
+      <div class="filter-row">
+        <div class="filter-group">
+          <label for="rating-slider">Minimalna ocjena: <span id="rating-value">0</span></label>
+          <input type="range" id="rating-slider" min="0" max="10" step="0.1" value="0">
+        </div>
+        
+        <div class="filter-group">
+          <button id="reset-filters">Poništi filtere</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="data-container">
+      <div id="count-info" class="count-info">Prikazano 0 od 0 filmova</div>
+      <table id="movies-table" aria-labelledby="tablica-filmova">
+        <thead>
+          <tr>
+            <th>Naslov filma</th>
+            <th>Žanr</th>
+            <th>Godina</th>
+            <th>Trajanje (min)</th>
+            <th>Ocjena</th>
+            <th>Akcija</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dinamički dodavanje podataka iz baze -->
+        </tbody>
+      </table>
+      <div id="no-results" style="display: none;">Nema rezultata koji odgovaraju odabranim filterima.</div>
+    </div>
+
+    <!-- Košarica icon -->
+    <div class="cart-icon" id="cart-icon">
+      🛒
+      <span class="cart-count" id="cart-count">0</span>
+    </div>
+
+    <!-- Košarica -->
+    <div class="cart-sidebar" id="cart-sidebar">
+      <div class="cart-header">
+        <h2>Vaša košarica</h2>
+        <span class="close-cart" id="close-cart">&times;</span>
+      </div>
+      <div id="cart-items-container">
+        <div class="empty-cart-message" id="empty-cart-message">
+          Vaša košarica je prazna.
+        </div>
+      </div>
+      <button class="rent-button" id="rent-button">Posudi filmove</button>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <section aria-labelledby="naslov-sekcije">
+      <h2 id="naslov-sekcije">Ovo je glavna sekcija</h2>
+      <p>HTML5 omogucava semanticku strukturu koja poboljsava pristupacnost i SEO.</p>
+    </section>
+
+    <article aria-labelledby="najnovije-vijesti">
+      <h2>Najnovije vijesti</h2>
+      <p>Ovdje se nalazi clanak s vaznim informacijama.</p>
+    </article>
+
+    <footer aria-labelledby="podnozje">
+      <p>&copy; 2025. Web Programiranje. Sva prava pridrzana.</p>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+
+  </body>
+</html>
